@@ -8,17 +8,11 @@ cmake_minimum_required(VERSION 2.8.12.1)
 # how the project and the build targets will be called
 set(PROJECT_NAME "AzzuUtils")
 
-# set the installation directory
-set(INSTALL_DIRECTORY P:/lib/x64)
-
 # when false, this will add "src/Main.cpp" to the build and build an executable.
 # otherwise, it will build a library
 set(IS_LIBRARY true)
-# when IS_LIBRARY is true, the headers for the library will be installed here
-set(INSTALL_DIRECTORY_HEADERS P:/include)
 # set the type of the library, either STATIC or SHARED
 set(LIBRARY_TYPE STATIC)
-set(INSTALL_DIRECTORY_SHARED P:/lib/share)
 
 # will add the "test" subdirectory and "test/Main.cpp"
 set(HAS_TESTS true)
