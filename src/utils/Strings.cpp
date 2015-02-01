@@ -26,20 +26,19 @@
 #include <algorithm>
 #include <iterator>
 #include <string>
-using std::string;
 
 
 namespace azzu {
 namespace utils {
 
-string join(string separator, std::initializer_list<string> elements)
+std::string join(std::string separator, std::initializer_list<std::string> elements)
 {
 	return join(separator, elements.begin(), elements.end());
 }
 
-std::vector<string> getParams(int argc, char** argv)
+std::vector<std::string> getParams(int argc, char** argv)
 {
-	std::vector<string> args;
+	std::vector<std::string> args;
 	args.reserve(argc - 1); // without path
 	std::copy(&argv[1], &argv[argc], std::back_inserter(args)); // skip path (argv[0])
 	return args;

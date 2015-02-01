@@ -38,7 +38,7 @@ set(ADD_BOOST true)
 set(BOOST_COMPONENTS)
 
 # Settings necessary for individual computer configurations go in this file
-include(CMake/user_defined_settings.cmake)
+include(CMake/user_settings.cmake)
 
 ###########################################################################
 ## Build                                                                 ##
