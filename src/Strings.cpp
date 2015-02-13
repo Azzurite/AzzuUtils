@@ -20,7 +20,7 @@
  *   along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "utils/Strings.h"
+#include "Strings.h"
 
 #include <initializer_list>
 #include <algorithm>
@@ -43,5 +43,6 @@ std::vector<std::string> getParams(int argc, char** argv)
 	std::copy(&argv[1], &argv[argc], std::back_inserter(args)); // skip path (argv[0])
 	return args;
 }
+
 } // namespace utils
 } // namespace azzu

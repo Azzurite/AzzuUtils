@@ -20,7 +20,7 @@
  *   along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "utils/Strings.h"
+#include "Strings.h"
 
 #include <string>
 using std::string;
@@ -67,10 +67,10 @@ using ::testing::StrNe; // !=
 
 // container matchers
 using ::testing::ContainerEq; // The same as Eq(container) except that the failure message also includes element differences
-using ::testing::Contains; // argument contains an element that matches e, which can be either a value or a matcher. 
-using ::testing::Each; // argument is a container where every element matches e, which can be either a value or a matcher. 
-using ::testing::ElementsAre; // 0 to 10 arguments are allowed. 
-using ::testing::ElementsAreArray; // initializer list, STL-style container, or C-style array. 
+using ::testing::Contains; // argument contains an element that matches e, which can be either a value or a matcher.
+using ::testing::Each; // argument is a container where every element matches e, which can be either a value or a matcher.
+using ::testing::ElementsAre; // 0 to 10 arguments are allowed.
+using ::testing::ElementsAreArray; // initializer list, STL-style container, or C-style array.
 using ::testing::IsEmpty;
 using ::testing::SizeIs; // SizeIs(matcher)
 using ::testing::UnorderedElementsAre; // same as ElementsAre, except unordered
@@ -93,10 +93,10 @@ using ::testing::ReturnRef;
 using ::testing::ReturnRefOfCopy;
 // side effects
 using ::testing::Assign; // Assign(&variable, value)
-using ::testing::DeleteArg; // Delete the N-th (0-based) argument, which must be a pointer. 
-using ::testing::SaveArg; // SaveArg<N>(pointer) Save the N-th (0-based) argument to *pointer. 
-using ::testing::SaveArgPointee; // SaveArgPointee<N>(pointer) 	Save the value pointed to by the N-th (0-based) argument to *pointer. 
-using ::testing::SetArgReferee; // SetArgReferee<N>(value) Assign value to the variable referenced by the N-th (0-based) argument. 
+using ::testing::DeleteArg; // Delete the N-th (0-based) argument, which must be a pointer.
+using ::testing::SaveArg; // SaveArg<N>(pointer) Save the N-th (0-based) argument to *pointer.
+using ::testing::SaveArgPointee; // SaveArgPointee<N>(pointer) 	Save the value pointed to by the N-th (0-based) argument to *pointer.
+using ::testing::SetArgReferee; // SetArgReferee<N>(value) Assign value to the variable referenced by the N-th (0-based) argument.
 using ::testing::SetArgPointee; // SetArgPointee<N>(value) Assign value to the variable pointed by the N-th (0-based) argument.
 using ::testing::SetArrayArgument; // SetArrayArgument<N>(first, last)
 using ::testing::Throw;
@@ -121,13 +121,13 @@ using ::testing::Between;
 class StringsTest : public ::testing::Test
 {
 public:
-	StringsTest() {}
+	StringsTest() { }
 
-	virtual void SetUp() {}
+	virtual void SetUp() { }
 
-	virtual ~StringsTest() {}
+	virtual ~StringsTest() { }
 
-	virtual void TearDown() {}
+	virtual void TearDown() { }
 };
 
 TEST_F(StringsTest, Join_CanJoinStrings)

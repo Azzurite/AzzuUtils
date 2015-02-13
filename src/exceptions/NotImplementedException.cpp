@@ -23,6 +23,7 @@
 #include "exceptions/NotImplementedException.h"
 
 namespace azzu {
+namespace utils {
 namespace exceptions {
 
 
@@ -49,5 +50,6 @@ NotImplementedException& NotImplementedException::operator=(NotImplementedExcept
 // ====== freestanding: ======
 
 } // namespace exceptions
+} // namespace utils
 } // namespace azzu
 

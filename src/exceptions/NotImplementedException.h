@@ -19,12 +19,13 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
- 
+
 #pragma once
 
 #include <exception>
 
 namespace azzu {
+namespace utils {
 namespace exceptions {
 
 
@@ -42,28 +43,28 @@ public:
 	 * @param message the message to be shown by what()
 	 */
 	explicit NotImplementedException(const char* message) noexcept;
-	
+
 	/*!
 	 * @brief Default copy constructor.
 	 */
 	NotImplementedException(const NotImplementedException&) noexcept;
-		
+
 	/*!
 	 * @brief Default move constructor.
 	 */
 	NotImplementedException(NotImplementedException&&) noexcept;
-	
+
 	/*!
 	 * @brief Default destructor.
 	 */
 	~NotImplementedException() noexcept;
-	
-	
+
+
 	/*!
 	 * @brief Default copy assignment operator.
 	 */
 	NotImplementedException& operator=(const NotImplementedException&) noexcept;
-	
+
 	/*!
 	 * @brief Default move assignment operator.
 	 */
@@ -80,5 +81,6 @@ private:
 };
 
 } // namespace exceptions
+} // namespace utils
 } // namespace azzu
 
